@@ -9,6 +9,8 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
+    import models
+
     return app
 
 app = create_app()
